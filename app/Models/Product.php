@@ -8,9 +8,10 @@ class Product extends Model
 {
     # Fillable Properties 
     protected $fillable = [
+        'image',
         'name',
         'slug',
         'description', 
-        'price'
+        'price',
     ];
 }
