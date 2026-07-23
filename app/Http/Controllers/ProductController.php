@@ -11,7 +11,7 @@ class ProductController extends Controller
     # Display a listing of all products.
     public function index()
     {
-        return Product::all();
+        return Product::latest()->get();
     }
 
     # Store a newly created product in storage.

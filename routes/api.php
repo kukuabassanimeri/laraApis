@@ -19,9 +19,6 @@ Route::post('/register', [AuthController::class, 'register']);
 # Login user route
 Route::post('/login', [AuthController::class, 'login']);
 
-# Use resource controller to implement all the crud routing.
-# Route::resource('products', ProductController::class);
-
 # Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
