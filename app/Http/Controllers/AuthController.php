@@ -70,7 +70,7 @@ class AuthController extends Controller
 
         # Return the response
         return response()->json([
-            'message' => 'Logged out!'
+            'message' => 'Logged out successfully!'
         ], 200);
     }
 }
